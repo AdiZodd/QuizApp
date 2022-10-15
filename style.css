@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    background-color: rgb(254, 250, 239);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border-radius: 12px;
+    height: 75vh;
+}
+
+
+/* Sidemenu styles */
+.sideMenu{
+    width: 175px;
+    height: 60vh;
+    background-color: #27355c;
+    border-radius: 12px 0px 0px 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}.sideMenu img{
+    width: 76px;
+    height: 66px;
+    margin-top: 12px;
+    margin-bottom: 62px;
+}.nav-link{
+    color: #909bb7!important;
+    font-size: 1.2em;
+    padding: unset!important;
+    padding-bottom: 1rem!important;
+    font-family: Rubik;
+}a::after{
+    content: '';
+    width: 7px;
+    height: 30px;
+    background-color: #fffffb;
+    position: absolute;
+    transition: all 225ms ease;
+    right: calc(100% - 7px);
+    opacity: 0;
+}a:hover::after{
+    opacity: 1;
+}.active{
+    color: #fffffb!important;
+}.active::after{
+    opacity: 1;
+}
+.alignWithImgOnLeft{ /* Positions the navBar in such a way that it is aligned with the Q from QuizApp logo */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* Styles for the content in the grey box */
+.mainContent{
+    width: 700px;
+    height: 60vh;
+    background-color: #f7f7f7;
+    border-radius: 0px 12px 12px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+}.mainContent img{
+    height: 50%;
+    width: 40%;
+    position: absolute;
+    top: 25%;
+}
+.test{
+    z-index: 2;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.subAndHeadline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.btnContainer{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 30px;
+    left: 60px;
+    text-decoration: none!important;
+}.btn{
+    color: #fff!important;
+    background-color: #ff4d10!important;
+    border-color: #ff4d10!important;
+    width: 200px;
+    height: 46px;
+    font-size: 1.4rem!important;
+}
+
+
+/* Progress bar that is being shown on top of the screen */
+
+.progress{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(174,174,175,255)!important;
+}
+
+.progress-bar{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(39,53,92,255)!important;
+}
+
+
+
+/* General styles */
+
+.textAlignCenter{
+    text-align: center;
+}
+
+.PTSansBold{
+    font-family: PT Sans;
+    font-weight: 700;
+}
+
+.PTSansRegular{
+    font-family: PT Sans;
+    font-weight: 400;
+}
+
+

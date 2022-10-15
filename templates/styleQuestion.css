@@ -1,0 +1,107 @@
+/* This style is for the quiz page */
+body{
+    background-color: rgb(254, 250, 239);
+}
+.mainContentQuestions{
+    width: 700px;
+    height: 60vh;
+    background-color: #f7f7f7;
+    border-radius: 0px 12px 12px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.headline{
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 26px;
+    margin-top: 44px;
+}
+
+.questionRows{
+    width: 75%;
+}
+
+.questionRow{
+    background: white;
+    border-radius: 1px;
+    height: 64px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 0px;
+
+}.questionRow:hover{
+    cursor: pointer;
+}
+
+.badge{
+    height: 50px;
+    width: 50px;
+    margin-left: 7px;
+    margin-right: 57px;
+    background: #d6d6d6;
+    color: rgb(36, 36, 36)!important;
+    border-radius: 1px!important;
+    font-size: 22px!important;
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+}.questionRow:hover .badge{
+    color: white!important;
+}
+
+.quizText{
+    font-family: Rubik;
+    font-weight: 300;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+/* Style for next question on the bottom */
+
+.arrowsContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: -15%;
+}
+
+.arrowBox{
+    background: #dbdff6;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    border:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Rubik;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 32px;
+}.arrowBox:hover{
+    cursor: pointer;
+}
+
+
+.numberOfQuestionsContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.numericContainer{
+    display: flex;
+    justify-content: flex-start;
+    margin: 7px;
+}
